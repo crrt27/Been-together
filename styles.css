@@ -1,52 +1,96 @@
-/* Responsive: Small phones */
-@media (max-width: 480px) {
+/* Responsive: iPhone X and similar (up to 430px wide) */
+@media (max-width: 430px) {
   .pink-overlay {
+    gap: 20px;
+    padding: 0 2vw;
   }
   .couple-section {
     flex-direction: column;
-    }
-    .person img {
-      width: 100px;
-    }
-    h1 {
-      font-size: 1.3em;
-    }
-    #days-together {
-      font-size: 1.1em;
-    }
-    .together-label, .since-label, .person .birthday {
-      font-size: 0.95em;
-    }
-    .info-block {
-      font-size: 0.95em;
-    }
-    body {
-      padding: 0 8px;
-    }
+    align-items: center;
+    gap: 12px;
+    max-width: 100vw;
+    box-shadow: none;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 0;
+  }
+  .person img {
+    width: 110px;
+    height: 110px;
+    max-width: 80vw;
+    max-height: 40vw;
+  }
+  h1 {
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  #days-together {
+    font-size: 1.2em;
+    word-break: break-word;
+    text-align: center;
+  }
+  .together-label, .since-label, .person .birthday {
+    font-size: 1em;
+    text-align: center;
+  }
+  .info-block {
+    font-size: 1em;
+    text-align: center;
+  }
+  body {
+    padding: 0 8px;
+    gap: 8px;
+  }
 }
-@media (max-width: 700px) {
+
+/* Responsive: tablets and small laptops */
+@media (max-width: 900px) {
   .pink-overlay {
     gap: 32px;
     padding: 0 6vw;
   }
   .couple-section {
     flex-direction: column;
-    }
-    .person img {
-      width: 140px;
-    }
-    .info-block {
-      font-size: 1em;
-    }
-    h1 {
-      font-size: 2em;
-    }
-    #days-together {
-      font-size: 1.5em;
-    }
-    body {
-      padding: 0 16px;
-    }
+    align-items: center;
+    gap: 18px;
+    max-width: 100vw;
+    box-shadow: none;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .person img {
+    width: 140px;
+    height: 140px;
+    max-width: 60vw;
+    max-height: 30vw;
+  }
+  .info-block {
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .name.chengleang, .name.chhuyhaun {
+    font-size: 1.1em;
+  }
+  h1 {
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  #days-together {
+    font-size: 1.5em;
+    word-break: break-word;
+    text-align: center;
+  }
+  .together-label, .since-label, .person .birthday {
+    font-size: 1em;
+    text-align: center;
+  }
+  body {
+    padding: 0 16px;
+    gap: 12px;
+  }
 }
 /* Desktop default */
 .couple-section {
@@ -64,36 +108,7 @@
     border: 4px solid #d16ba5; /* default, overridden below */
     max-width: 90vw;
     max-height: 50vw;
-@media (max-width: 400px) {
-    .couple-section {
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-        max-width: 100vw;
-    }
-    .person img {
-        width: 120px;
-        height: 120px;
-    }
-    h1 {
-        font-size: 1.2em;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-    }
-    #days-together {
-        font-size: 1em;
-        word-break: break-word;
-        text-align: center;
-    }
-    .together-label, .since-label, .person .birthday {
-        font-size: 0.9em;
-        text-align: center;
-    }
-    body {
-        padding: 0 16px;
-        gap: 8px;
-    }
-}
+/* removed old 400px media query, now handled by 430px query above */
 /* Add Belove font (local or web font) */
 @font-face {
     font-family: 'Belove';
@@ -118,13 +133,7 @@
     flex: 0 0 auto;
 }
 
-@media (max-width: 700px) {
-    .couple-section {
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
-}
+/* removed old 700px media query, now handled by 900px query above */
 
 body {
     min-height: 100vh;
@@ -284,52 +293,4 @@ p {
     text-shadow: 2px 2px 12px #000;
 }
 
-@media (max-width: 700px) {
-    .couple-section {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 12px;
-        max-width: 100vw;
-    }
-    .person {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        justify-content: flex-start;
-        text-align: center;
-    }
-    .person img {
-        width: 140px;
-        height: 140px;
-    }
-    .info-block {
-        text-align: left;
-        font-size: 0.9em;
-    }
-    .name.chengleang, .name.chhuyhaun {
-        font-size: 1em;
-    }
-    margin-bottom: 24px;
-        font-size: 1.5em;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-    }
-    #days-together {
-        font-size: 1.3em;
-        word-break: break-word;
-        text-align: center;
-    }
-    .together-label, .since-label, .person .birthday {
-        font-size: 1em;
-        text-align: center;
-    }
-    .info-block {
-        text-align: center;
-        align-items: center;
-    }
-    body {
-        padding: 0 24px;
-        gap: 16px;
-    }
-}
+/* removed old 700px media query, now handled by 900px query above */
