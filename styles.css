@@ -101,14 +101,7 @@
     flex-wrap: nowrap;
     max-width: 900px;
 }
-.person img {
-    flex-shrink: 0;
-    width: 320px;
-    height: 320px;
-    border: 4px solid #d16ba5; /* default, overridden below */
-    max-width: 90vw;
-    max-height: 50vw;
-/* removed old 400px media query, now handled by 430px query above */
+/* removed duplicate .person img, see below for correct version */
 /* Add Belove font (local or web font) */
 @font-face {
     font-family: 'Belove';
@@ -117,17 +110,7 @@
     font-style: normal;
 }
 
-.couple-section {
-    display: flex;
-    gap: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-    justify-content: center;
-    margin-bottom: 32px;
-    flex-wrap: nowrap;
-}
+/* removed duplicate .couple-section, see above for correct version */
 .couple-section > div {
     text-align: center;
     flex: 0 0 auto;
@@ -191,21 +174,7 @@ body {
     flex: 0 0 auto;
 }
 
-.person {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    justify-content: flex-start;
-    text-align: center;
-}
-    .person {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        justify-content: flex-start;
-        text-align: center;
-    }
+/* removed duplicate .person, see above for correct version */
 .person img {
     flex-shrink: 0;
     width: 320px;
