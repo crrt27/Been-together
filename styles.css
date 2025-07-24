@@ -197,7 +197,7 @@ h1 {
     color: #d16ba5;
     font-size: 3em;
     margin-bottom: 0.2em;
-    margin-top: 0.2em;
+    margin-top: 2em; /* Increased top gap */
     text-shadow: 2px 2px 12px #000, 1px 1px 8px #e1f4f8;
     font-family: 'Henny Penny', cursive;
     letter-spacing: 2px;
